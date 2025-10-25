@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Unoo!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ede7db;
+        font-family: 'Inter', sans-serif;
+        overflow: hidden;
+      }
+
+      .paper {
+        position: relative;
+        width: 90%;
+        max-width: 900px;
+        background: #f4e6d6;
+        padding: 50px 60px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1.8s ease forwards;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .paper::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle at 20% 30%, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+        background-size: 8px 8px;
+        mix-blend-mode: multiply;
+        opacity: 0.15;
+      }
+
+      .paper::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at center, rgba(0, 0, 0, 0.08) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .coffee-stain {
+        position: absolute;
+        border: 4px solid rgba(150, 100, 50, 0.3);
+        border-radius: 50%;
+        transform: rotate(-8deg);
+        mix-blend-mode: multiply;
+      }
+
+      .coffee-stain.one {
+        width: 150px;
+        height: 150px;
+        top: 80px;
+        left: 100px;
+      }
+
+      .coffee-stain.two {
+        width: 200px;
+        height: 200px;
+        bottom: 100px;
+        right: 150px;
+        opacity: 0.6;
+      }
+
+      h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.5rem;
+        margin-bottom: 0.2em;
+        text-align: center;
+        color: #3e2f1c;
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        from { text-shadow: 0 0 5px #c19a6b; }
+        to { text-shadow: 0 0 20px #d7a96b; }
+      }
+
+      .recipient {
+        font-style: italic;
+        font-family: 'Cormorant Garamond', serif;
+        margin-bottom: 1.5em;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+
+      .message {
+        line-height: 1.6;
+        white-space: pre-line;
+        opacity: 0;
+        font-size: 1rem;
+        animation: typeWriter 8s steps(80) forwards;
+      }
+
+      @keyframes typeWriter {
+        0% { width: 0; opacity: 1; }
+        100% { width: 100%; opacity: 1; }
+      }
+
+      .signature {
+        text-align: right;
+        margin-top: 2em;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.1rem;
+        opacity: 0;
+        animation: fadeIn 2s ease forwards 8s;
+      }
+
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+
+      .candle {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 12px;
+        height: 35px;
+        background: linear-gradient(to bottom, #fddbb0, #f5b971);
+        border-radius: 3px;
+      }
+
+      .flame {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        width: 10px;
+        height: 15px;
+        background: radial-gradient(circle, #ffd966 0%, #ff8800 80%);
+        border-radius: 50%;
+        transform: translateX(-50%);
+        animation: flicker 0.2s infinite alternate;
+      }
+
+      @keyframes flicker {
+        0% { opacity: 1; transform: translateX(-50%) scale(1); }
+        100% { opacity: 0.6; transform: translateX(-50%) scale(1.1); }
+      }
+
+      audio {
+        display: block;
+        margin: 20px auto;
+      }
+
+      @media (max-width: 600px) {
+        .paper {
+          padding: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="paper">
+      <div class="coffee-stain one"></div>
+      <div class="coffee-stain two"></div>
+      <div class="candle"><div class="flame"></div></div>
+
+      <h1>Happiest Birthday, Unooo!!!</h1>
+      <div class="recipient">Galing sa pinaka pogi sa tropa ng jowa mo :pp</div>
+
+      <p class="message">
+First of all, pasensya na kung hindi ako nagsulat sa papel😓😓. Sorry napaso ang kamay nung ginagawa ko 'to hjehehehehe. Pero ayan, ginawa ko pa rin tong website kasi bida bida ako charot, para sa'yo kasi gusto kong may effort kahit pa-paano at uniquee.
+
+Happy Birthday, Uno, Dos, Tres!!!! Thank you dahil nandiyan ka para buhatin ako sa Valorant hehehe charot sa mga bagay-bagay syempre at sa mga memories na nagawa. I really appreciate na naging part ka ng buhay ko. Alam ko minsan nakaka stress 'yang tropa namin na si Jash pero sana 'wag mong kalimutan na andito pa rin kamo para sa'yo.
+
+More memories to come po sana 'wag ka muna kunin ni God, iiyak ak sge k...,,,,
+
+Ngayong birthday mo, I hope na enjoyin mo ito at minsan lang din 'to gewww lumamon, mag walwal, tumawa ng todo at wag masyado magpaka-seryoso sa life. Deserve mo lahat ng saya at pahinga sa araw na 'to.
+
+Sana maging masaya ka hindi lang ngayon kundi araw-araw. Keep being the funny, chill, and kind Uno na kilala namin. Lahat kami thankful na nakilala ka namin.
+
+Happy Birthday, ulit, Uno!!! Stay awesome, wag masyadong pogi, nakakasilaw na eh.
+
+      <div class="signature">Bill "Pogi" Gedrick ng Molino Quatro boi</div>
+    </div>
+
+
+  </body>
+</html>
